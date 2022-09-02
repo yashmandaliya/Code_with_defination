@@ -1,0 +1,67 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class student
+{
+	char name[20];
+	int en_no;
+	int year;
+	char div;
+	public:
+	void get()
+	{
+		cout<<"Enter Student Enrolll. No:";
+		cin>>en_no;
+		cout<<"Enter Student name:";
+		cin>>name;
+		cout<<"Enter Year Of Admission:";
+		cin>>year;
+		cout<<"Enter Division:";
+		cin>>div;
+	}
+	void put()
+	{
+		cout<<"\n";
+		cout<<en_no<<"\t"<<name<<"\t"<<year<<"\t"<<div;
+	}
+};
+class stream
+{
+	char str_nm[10];
+	char med[10];
+	int mo_no;
+	char add[100];
+	public:
+	void get1()
+	{
+	cout<<"Enter Stream:";
+	cin>>str_nm;
+	cout<<"Enter Medium:";
+	cin>>med;
+	cout<<"Enter Mobile Number:";
+	cin>>mo_no;
+	cout<<"Enter Address Of Your Home:";
+	cin>>add;
+	}
+	void put()
+	{
+		cout<<"\t";
+		cout<<str_nm<<"\t"<<med<<"\t"<<mo_no<<"\t"<<add;
+	}
+
+};
+void main()
+{
+    //	int a;
+	student s1;
+	stream s2;
+	clrscr();
+	s1.get();
+	s2.get1();
+	s1.get();
+	s2.get1();
+	cout<<"En No\tName\tYear\tDiv\tStream\tMedium\tCon No\tAddress";
+	s1.put(),s2.put();
+	s1.put(),s2.put();
+	getch();
+}
