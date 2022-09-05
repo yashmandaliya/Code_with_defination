@@ -1,0 +1,10 @@
+create table user3(
+name1 varchar(20) not null,
+city varchar(20) not null,
+add1 varchar(20) not null,
+add2 varchar(20) not null,
+pincode number(10) not null,
+username varchar(20) not null,
+pass1 varchar(20) not null);
+
+insert into user3(name1,city,add1,add2,pincode,username,pass1)values('Yash','Rajkot','Kevdawadi 3/14','Opp Khodiyar mart',360001,'yashmandaliya9','YASH_SONI_25');
